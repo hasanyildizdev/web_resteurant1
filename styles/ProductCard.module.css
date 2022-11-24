@@ -1,0 +1,75 @@
+.container{
+    flex: 1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+}
+
+.card{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding: 20px 20px;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #d1411e;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.desc{
+    font-size: 16px;
+    text-align: center;
+    color: #777;
+}
+
+@media screen and (max-width:480px) {
+    .container{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .card{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+    }
+
+    .title{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .price{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desc{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

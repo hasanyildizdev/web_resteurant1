@@ -1,0 +1,218 @@
+.container{
+    height: calc(100vh);
+    background-color: #222;
+    display: flex;
+}
+
+.imageBg{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: auto;
+    justify-content: center;
+}
+
+.item{
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.item:last-child{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.card{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.title{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color:#b7903c;
+}
+
+.text{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color:lightgray;
+}
+
+.motto{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(211, 211, 211);
+}
+
+.rightContainer{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.item2{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.item2:last-child{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.buttom{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.iyiapp{
+    flex: 1;
+    display: flex;
+    align-items:flex-end;
+    color: white;
+}
+
+.map{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+}
+
+@media screen and (max-width:480px) {
+
+    .container{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        text-align: center;
+    }
+
+    .item{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item:first-child{
+        display: none;
+    }
+
+    .item:last-child{
+        flex:1;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .iyiapp{
+        flex: 1;
+        display: flex;
+        align-items:flex-start;
+        color: white;
+        font-size: 12px;
+    }
+
+    .map{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapImage{
+        flex:1;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        height: 80vw;
+        width: 80vw;
+    }
+
+    .item2{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .item2:first-child{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item2:last-child{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card{
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px;
+    }
+
+    .buttom{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .motto{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+}
+
