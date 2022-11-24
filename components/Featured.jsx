@@ -1,8 +1,7 @@
 import styles from "../styles/Featured.module.css";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import React from "react";
-
+import NextImage from "next/image";
 
   var stopSlider=false;
   let timeout;
@@ -12,13 +11,13 @@ const Featured = () => {
   const [index,setIndex]=useState(0); 
 
   const images=[
-    require('../public/img/featured_adana.png'),
-    require('../public/img/featured_ciger.png'),
-    require('../public/img/featured_kusbasi.png'),
-    require('../public/img/featured_yprk.png'),
-    require('../public/img/featured_patlican.png'),
-    require('../public/img/featured_tavuk.png'),
-    require('../public/img/featured_kanat.png'),
+    require('../img/featured_adana.png'),
+    require('../img/featured_ciger.png'),
+    require('../img/featured_kusbasi.png'),
+    require('../img/featured_yprk.png'),
+    require('../img/featured_patlican.png'),
+    require('../img/featured_tavuk.png'),
+    require('../img/featured_kanat.png'),
   ];
 
   const handleArrow=(direction)=>{
@@ -42,17 +41,17 @@ const Featured = () => {
   return (
     <div className={styles.container}>
         <div className={styles.arrowContainer} style={{left:10}} onClick={()=>handleArrow("l")}>
-            <Image  src={require('../public/img/arrowL.png')} alt="" layout="fill" objectFit="contain" priority={true} />
+               <NextImage  src={require('../img/arrowL.png')} alt="" layout="fill" objectFit="contain" loading="lazy" />
         </div>
         <div className={styles.wrapper} style={{transform:`translateX(${-100*index}vw)`}}>
                 {images.map((img,i)=>(
                     <div className={styles.imgContainer} key={i}>
-                           <Image src={img}  alt="" layout="fill" objectFit="contain" priority={true}/>
+                           <NextImage src={img}  alt="" layout="fill" objectFit="contain"  loading="lazy"/>
                     </div>
                 ))}
         </div>
         <div className={styles.arrowContainer} style={{right:10}} onClick={()=>handleArrow("r")}>
-            <Image  src={require('../public/img/arrowR.png')} alt="" layout="fill" objectFit="contain"/>
+            <NextImage  src={require('../img/arrowR.png')} alt="" layout="fill" objectFit="contain" loading="lazy"/>
         </div>
     </div>
   )

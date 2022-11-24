@@ -1,21 +1,12 @@
 import styles from "../styles/Navbar.module.css"
-import Image from "next/image"
 import Head from 'next/head'
+import NextImage from "next/image";
 
 const Navbar=()=>{
 
     return(
 
         <div className={styles.container}>
-
-            <style jsx>{`
-                .checkbox:checked ~ .list{
-                }
-
-                @media screen and (max-width:480px) {
-   
-                }
-            `}</style>
 
         <Head>
           <title>Şehri Ziyafet</title>
@@ -26,11 +17,12 @@ const Navbar=()=>{
 
             <div className={styles.item}>
                     <div className={styles.menuDiv} tabIndex="1">
-                                <Image 
+                                <NextImage 
                                     alt="" 
-                                    src={require('../public/img/menu_icon3.png')} 
+                                    src={require('../img/menu_icon3.png')} 
                                     width={"35"} 
                                     height={"35"}
+                                    loading="lazy"
                                 />
                     </div> 
                     <ul className={styles.listMobile} >
@@ -43,7 +35,7 @@ const Navbar=()=>{
                         <a href="../../#productList">
                             <li  style={{cursor:"pointer"}} className={styles.listItemMobile}>Ürünler</li>
                         </a>
-                        <a href="/contact" target="blank">
+                        <a href="../../#footer" target="blank">
                             <li className={styles.listItemMobile}>İletişim</li>
                         </a>
                     </ul>
@@ -57,16 +49,17 @@ const Navbar=()=>{
                     <a href="/menu" target="blank">
                         <li className={styles.listItemPC}>Menu</li>
                     </a>
-                    <Image 
+                    <NextImage 
                         className={styles.manImage}
-                        src={require('../public/img/chef.png')} 
+                        src={require('../img/chef.png')} 
                         alt="" 
                         height={"100"} 
+                        loading="lazy"
                         />
                     <a href="../../#productList">
                         <li  style={{cursor:"pointer"}} className={styles.listItemPC}>Ürünler</li>
                     </a>
-                    <a href="/contact" target="blank">
+                    <a href="../../#footer" target="blank">
                         <li className={styles.listItemPC}>İletişim</li>
                     </a>
                 </ul>
@@ -81,8 +74,9 @@ const Navbar=()=>{
                     </div>
                     <div className={styles.callButton}>
                         <a href="tel:+905393072580">
-                            <Image src={require('../public/img/phone.png')}
+                            <NextImage src={require('../img/phone.png')}
                             alt=""
+                            loading="lazy"
                             className={styles.phoneImage} />     
                         </a>
                     </div>

@@ -9,7 +9,7 @@ export default function Home() {
         <Head>
           <title>Şehri Ziyafet</title>
           <meta name="description" content="İslahiye restoran" />
-          <link rel="icon" href="/favico.ico" />
+          <link rel="icon" type="image/x-icon" href="/favico.ico" />
         </Head>
         <Featured/>
         <ProductList/> 

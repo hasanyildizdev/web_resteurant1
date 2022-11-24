@@ -5,7 +5,7 @@ const ProductList=()=>{
 
   return (
     <div id="productList" className={styles.container}>
-        <h1 className={styles.title}> ŞEHRİ ŞAHANE POPÜLER LEZZETLER </h1>
+        <h1 className={styles.title}> ŞEHRİ ZİYAFET POPÜLER LEZZETLER </h1>
         <p className={styles.desc}>
             Benzersiz ortam ve samimi hizmet ile evinizde gibi hissedin.<br/>
             Ondan fazla kebap çeşidiyle müşterilerimize aradıkları lezzeti sunmaktayız.<br/>

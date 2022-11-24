@@ -1,11 +1,11 @@
-import Image from "next/image";
 import styles from "../styles/Footer.module.css";
+import NextImage from "next/image";
 
 const Footer=()=>{
     return(
-        <div className={styles.container}>
+        <div className={styles.container} id="footer">
             <div className={styles.item}>
-                <Image className={styles.imageBg} src={require('../public/img/bg.png')} priority={true} alt=""/>
+                    <NextImage className={styles.imageBg} src={require("../img/bg.png")} loading="lazy" alt=""/>
             </div>
             <div className={styles.item}>
                 <div className={styles.rightContainer}>
